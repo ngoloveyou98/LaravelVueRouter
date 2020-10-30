@@ -2,15 +2,16 @@
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <!-- Main styles for this application -->
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-        <meta id="csrf-token" name="csrf-token" value="{{ csrf_token() }}">
     </head>
     <body>
         <p>Laravel</p>
         <div id="app">
-            <router-view></router-view>
+            <example-component></example-component>
         </div>
 
         <script src="{{ mix('js/app.js') }}"></script>
